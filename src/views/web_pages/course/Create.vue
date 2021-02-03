@@ -30,8 +30,8 @@
           <div class="vx-col w-full">
             <small class="ml-2">Type</small> <br>
             <vs-radio class="ml-2 mr-2" v-model="type" vs-value="1">Certification Of Position</vs-radio>
-            <vs-radio class="ml-2 mr-2" v-model="type" vs-value="2">Company Oriented</vs-radio>
-            <vs-radio class="ml-2 mr-2" v-model="type" vs-value="3">1 Visi Hati Semangat</vs-radio>
+            <vs-radio class="ml-2 mr-2" v-model="type" vs-value="2">Company Orientation</vs-radio>
+            <vs-radio class="ml-2 mr-2" v-model="type" vs-value="3">Company Value</vs-radio>
           </div>
         </div>
         <div class="vx-row mb-5">
@@ -113,7 +113,7 @@ export default {
     async getDetail () {
       const { success } = await this.dispatchShow(this.$route.params.id)
       this.organization_id = success.organization_id
-      this.image = 'http://127.0.0.1:8000/storage/' + success.image
+      this.image = 'http://api-kms.maesagroup.co.id/files/' + success.image
       this.title = success.title
       this.description = success.description
       this.file = success.file

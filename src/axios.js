@@ -1,8 +1,9 @@
 // axios
 import axios from 'axios'
 
-const baseURL = 'http://127.0.0.1:8000/'
-// const baseURL = 'http://192.168.1.104:80/'
+// const baseURL = 'http://localhost:8000'
+// const baseURL = 'http://192.168.1.25:80/'
+const baseURL = 'http://api-kms.maesagroup.co.id/'
 
 export default axios.create({
   baseURL

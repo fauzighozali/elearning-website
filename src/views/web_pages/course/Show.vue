@@ -15,8 +15,8 @@
                 {{tr.description}}
               </vs-td>
               <template slot="expand">
-                <vs-chip class="w-full" v-for="(val,k) in tr.answers" :key="k" :color="val.is_true ? 'success' : 'warning'">
-                  <vs-avatar icon-pack="feather" :icon="val.is_true ? 'icon-check' : 'icon-x'" :color="val.is_true ? 'success' : 'warning'"></vs-avatar>
+                <vs-chip class="w-full" v-for="(val,k) in tr.answers" :key="k" :color="val.is_true==1 ? 'success' : 'warning'">
+                  <vs-avatar icon-pack="feather" :icon="val.is_true==1 ? 'icon-check' : 'icon-x'" :color="val.is_true ? 'success' : 'warning'"></vs-avatar>
                   {{val.name}}
                 </vs-chip>
               </template>
@@ -29,7 +29,7 @@
             <thead>
               <tr>
                 <th>Answer List</th>
-                <th width="20">True answer ?</th>
+                <th width="25">True Answer</th>
               </tr>
             </thead>
             <tr v-for="(tr, i) in f_answers" :key="i">

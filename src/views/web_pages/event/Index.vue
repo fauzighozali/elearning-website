@@ -15,7 +15,7 @@
           <template slot-scope="{data}">
             <vs-tr :key="indextr" v-for="(tr, indextr) in data">
               <vs-td class="img-container">
-                <img :src="'http://127.0.0.1:8000/storage/' + tr.image" width="150" height="100" class="product-img"/>
+                <img :src="'http://api-kms.maesagroup.co.id/files/' + tr.image" width="150" height="100" class="product-img"/>
               </vs-td>
               <vs-td :data="tr.title">{{tr.title}}</vs-td>
               <vs-td :data="tr.description">{{tr.description}}</vs-td>

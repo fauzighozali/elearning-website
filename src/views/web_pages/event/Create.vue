@@ -87,7 +87,7 @@ export default {
     async getDetail () {
       const { success } = await this.dispatchShow(this.$route.params.id)
       this.company_id = success.company_id
-      this.image = 'http://127.0.0.1:8000/storage/' + success.image
+      this.image = 'https://api-kms.maesagroup.co.id/storage' + success.image
       this.title = success.title
       this.description = success.description
       this.link = success.link

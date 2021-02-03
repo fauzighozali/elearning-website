@@ -18,7 +18,7 @@
           <template slot-scope="{data}">
             <vs-tr :key="indextr" v-for="(tr, indextr) in data">
               <vs-td class="img-container">
-                <vs-avatar :src="'http://127.0.0.1:8000/storage/' + tr.image"/>
+                <vs-avatar :src="'http://api-kms.maesagroup.co.id/files/' + tr.image"/>
               </vs-td>
               <vs-td :data="tr.name">{{tr.name}}</vs-td>
               <vs-td :data="tr.username">{{tr.username}}</vs-td>

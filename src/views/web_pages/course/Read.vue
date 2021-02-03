@@ -15,15 +15,15 @@
           <template slot-scope="{data}">
             <vs-tr :key="indextr" v-for="(tr, indextr) in data">
               <vs-td class="img-container">
-                <img :src="'http://127.0.0.1:8000/storage/' + tr.image" width="150" height="100" class="product-img"/>
+                <img :src="'http://api-kms.maesagroup.co.id/files/' + tr.image" width="150" height="100" class="product-img"/>
               </vs-td>
               <vs-td :data="tr.title">
                 <router-link :to="{name:'course-detail', params:{id: tr.id}}">{{tr.title}}</router-link>
               </vs-td>
               <vs-td :data="tr.description">{{tr.description}}</vs-td>
-              <vs-td :data="tr.type" v-if="tr.type === 1">Certification Of Position</vs-td>
-              <vs-td :data="tr.type" v-if="tr.type === 2">Company Oriented</vs-td>
-              <vs-td :data="tr.type" v-if="tr.type === 3">1 Visi Hati Semangat</vs-td>
+              <vs-td :data="tr.type" v-if="tr.type === '1'">Certification Of Position</vs-td>
+              <vs-td :data="tr.type" v-if="tr.type === '2'">Company Oriented</vs-td>
+              <vs-td :data="tr.type" v-if="tr.type === '3'">1 Visi Hati Semangat</vs-td>
             </vs-tr>
           </template>
         </vs-table>
