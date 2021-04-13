@@ -21,9 +21,10 @@
                 <router-link :to="{name:'course-detail', params:{id: tr.id}}">{{tr.title}}</router-link>
               </vs-td>
               <vs-td :data="tr.description">{{tr.description}}</vs-td>
-              <vs-td :data="tr.type" v-if="tr.type === '1'">Certification Of Position</vs-td>
-              <vs-td :data="tr.type" v-if="tr.type === '2'">Company Oriented</vs-td>
-              <vs-td :data="tr.type" v-if="tr.type === '3'">1 Visi Hati Semangat</vs-td>
+              <vs-td :data="tr.type" v-if="tr.type === '1'">Hard Skill</vs-td>
+              <vs-td :data="tr.type" v-if="tr.type === '4'">Soft Skill</vs-td>
+              <vs-td :data="tr.type" v-if="tr.type === '2'">Our Company</vs-td>
+              <vs-td :data="tr.type" v-if="tr.type === '3'">Corporate Value</vs-td> 
             </vs-tr>
           </template>
         </vs-table>

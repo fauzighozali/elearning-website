@@ -29,9 +29,10 @@
         <div class="vx-row mb-5">
           <div class="vx-col w-full">
             <small class="ml-2">Type</small> <br>
-            <vs-radio class="ml-2 mr-2" v-model="type" vs-value="1">Certification Of Position</vs-radio>
-            <vs-radio class="ml-2 mr-2" v-model="type" vs-value="2">Company Orientation</vs-radio>
-            <vs-radio class="ml-2 mr-2" v-model="type" vs-value="3">Company Value</vs-radio>
+            <vs-radio class="ml-2 mr-2" v-model="type" vs-value="1">Hard Skill</vs-radio>
+            <vs-radio class="ml-2 mr-2" v-model="type" vs-value="4">Soft Skill</vs-radio>
+            <vs-radio class="ml-2 mr-2" v-model="type" vs-value="2">Our Company</vs-radio>
+            <vs-radio class="ml-2 mr-2" v-model="type" vs-value="3">Corporate Value</vs-radio>
           </div>
         </div>
         <div class="vx-row mb-5">
